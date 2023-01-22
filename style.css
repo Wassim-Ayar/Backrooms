@@ -1,0 +1,61 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #211D1F;
+  }
+
+  @font-face {
+    font-family: 'VCR OSD Mono';
+    font-weight: 100;
+    src: url('VCR_OSD_MONO_1.001.ttf') format('truetype'); 
+  }
+
+  @keyframes backInDown {
+    0% {
+      transform: translateY(-1200px) scale(0.7);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: translateY(0px) scale(0.7);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .backInDown {
+    animation-name: backInDown;
+    animation-duration: 10s;
+    animation-fill-mode: linear;
+  }
+
+  .WHITE {
+    color: rgb(255, 255, 255);
+  }
+
+  .Shadow {
+    text-shadow: 0px -6px 7px #040404;
+  }
+
+  .video {
+    position: absolute;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  #Title {
+    font-family: 'VCR OSD Mono', sans-serif;
+    font-size: 64px;
+  }
