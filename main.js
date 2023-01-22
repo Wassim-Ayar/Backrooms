@@ -1,8 +1,8 @@
 let Title = document.querySelector("#Title"); // Récupère le h1 de mon HTML en lui donnant la valeur "Title".
 
-const Video = document.querySelector(".video") // Récupère la vidéo de mon HTML.
+const Video = document.querySelector(".video"); // Récupère la vidéo de mon HTML.
 
-const Audio = document.querySelector(".audio") // Récupère l'audio de mon HTML
+const Audio = document.querySelector(".audio"); // Récupère l'audio de mon HTML
 
 Video.muted = true;// Je mute la vidéo pour la lancer au début de la vidéo, plusieurs sites m'ont expliqués que c'est la seule manière d'utiliser la fonction autoplay.
 
@@ -35,7 +35,7 @@ function Randomizer(array) {
 setTimeout(() => { // Au bout de 13 secondes, ce code se lance.
     setInterval(() => { // Le code se relance ensuite toutes les 1 secondes.
         Randomizer(True); // Active la fonction Randomizer sur le tableau True.
-            Title.innerHTML = "" // Je vide le HTML de Title pour ne pas avoir à utiliser la fonction replace.
+            Title.innerHTML = ""; // Je vide le HTML de Title pour ne pas avoir à utiliser la fonction replace.
                 for (let i = 0; i < True.length; i++) { // Je lance une boucle qui compilera tous les élements à l'intérieur du tableau.
                 Title.innerHTML += True[i] + "_"} // Puis je remplace le HTML de Title par un élement dans l'ordre du tableau sauf que la tableau a été mélangé aléatoirement donc on peut dire "Par un élement aléatoire du tableau" ainsi qu'un underscore pour faire plus creepy.
     }, 1000);
